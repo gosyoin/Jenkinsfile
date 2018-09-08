@@ -1,14 +1,14 @@
 pipeline {
     agent any 
     stages {
-        stage('Stage 1') {
+        stage('Hello') {
             steps {
                 echo 'Hello world!' 
             }
         }
-        stage('Git Clone'){
+        stage('Good evening'){
             steps{
-                git 'https://github.com/gosyoin/hello-world.git'
+                echo 'Good evening!'
             }
         }
     }
